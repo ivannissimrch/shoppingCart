@@ -21,7 +21,7 @@ const inventory = [
   },
 ];
 //functions
-//andle click from add buttons
+//handle click buttons
 function clickHandler({ target }) {
   if (target.classList.contains("add-btn")) {
     const itemName = target.id.slice(4);
@@ -99,5 +99,5 @@ let cartTotal = document.getElementById("cart-total");
 cartTotal.textContent = `Total ${0}`;
 //get dom elements
 
-//add event listener to add buttons
+//add event listener to buttons
 addButtons.addEventListener("click", clickHandler);
